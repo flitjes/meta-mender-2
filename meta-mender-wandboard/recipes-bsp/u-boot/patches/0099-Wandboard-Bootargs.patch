@@ -1,0 +1,12 @@
+diff --git a/include/configs/wandboard.h b/include/configs/wandboard.h
+index ab1b56a..8a0343b 100644
+--- a/include/configs/wandboard.h
++++ b/include/configs/wandboard.h
+@@ -130,6 +130,7 @@
+ 	"ramdisk_addr_r=0x13000000\0" \
+ 	"ramdiskaddr=0x13000000\0" \
+ 	"scriptaddr=" __stringify(CONFIG_LOADADDR) "\0" \
++	"bootargs=console=${console} panic=5 oops=panic\0" \
+ 	BOOTENV
+ 
+ #define BOOT_TARGET_DEVICES(func) \
