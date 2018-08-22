@@ -16,6 +16,7 @@ meta-mender/meta-mender-demo
 
 Add the following to your local.conf
 
+```bash
 MACHINE ??= "wandboard-imx6-mender"
 
 INHERIT += "mender-full"
@@ -30,3 +31,4 @@ DISTRO_FEATURES_append = " systemd"
 DISTRO_FEATURES_BACKFILL_CONSIDERED += "sysvinit"
 VIRTUAL-RUNTIME_init_manager = "systemd"
 VIRTUAL-RUNTIME_initscripts = "systemd-compat-units"
+```
